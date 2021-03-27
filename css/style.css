@@ -1,0 +1,396 @@
+@charset "utf-8";
+/* リセットcss */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+p, h1 {
+  font-style: YuMincho;
+}
+
+/* change colours to suit your needs */
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  color: #FFFFFF;
+  font: normal normal 800 32px/42px YuMincho;
+  display: flex;
+}
+
+.header-logo img {
+  width: 10%;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  margin-left: 50px;
+  text-align: left;
+}
+
+.header-nav li {
+  font-size: 16px;
+  margin-right: 50px;
+}
+
+.header-nav a {
+  color: #ccc;
+  font: normal normal 800 16px/42px YuMincho;
+}
+
+.fv {
+  width: 100%;
+  height: 1079px;
+  background-image: url(../img/mainbg01.jpg);
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  z-index: -5;
+}
+
+.fv-logo {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  font-size: 100px;
+  color: #ccc;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font: normal normal 800 34px/42px YuMincho;
+}
+
+/*about*/
+
+.about {
+  background-image: url(../img/bg.jpg);
+  width: 100%;
+}
+
+.about-wrap {
+  max-width: 1400px;
+  padding-top: 160px;
+  padding-bottom: 185px;
+  margin: 0 auto;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.about-index {
+  text-indent: 1em;
+}
+
+.about-logo {
+  font: normal normal 28px/42px YuMincho;
+  line-height: 2.0;
+  align-items: center;
+}
+
+.about-nav {
+  font: normal normal 16px/22px YuMincho;
+  line-height: 2.0;
+  margin-right: 80px;
+}
+
+/*mission*/
+
+.mission-wrap {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.mission-left {
+  width: 60%;
+}
+
+.mission-right {
+  margin-left: 50px;
+  width: 40%;
+}
+
+.mission-logo {
+  font: normal normal 36px/62px YuMincho;
+}
+
+.mission-right p {
+  font: normal normal 16px/32px YuMincho;
+  margin-top: 50px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/*plan*/
+
+.plan {
+  margin-top: 50px;
+  background-image: url(../img/bg02.jpg);
+}
+
+.plan-logo {
+  font: normal normal 36px/32px YuMincho;
+  text-align: center;
+  margin: 50px 0;
+  color: #000000;
+}
+
+.plan-logo img {
+  width: 3%;
+  padding-top: 50px;
+}
+
+.plan-wrap {
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.plan-about {
+  margin-right: 50px;
+  display: block;
+}
+
+.last-child {
+  margin-right: 0;
+}
+
+.plan-about img {
+  margin-bottom: 20px;
+  overflow: hidden;
+  vertical-align: baseline;
+  height: 200px;
+}
+
+.plan-about h1 {
+  margin-bottom: 20px;
+  font: normal normal 20px/32px YuMincho;
+}
+
+.plan-about p {
+  font: normal normal 16px/32px YuMincho;
+}
+
+/*news*/
+
+.news {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.news-nav ul {
+  text-align: center;
+  display: flex;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.news-nav a {
+  color: #000000;
+  font: normal normal 16px/32px YuMincho;
+  margin-right: 50px;
+}
+
+.news-wrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.news-about {
+  height: 130px;
+  width: 450px;
+  background-color: #F6F6F6;
+  display: flex;
+}
+
+.news-about img {
+  width: 25%;
+  padding: 10px;
+}
+
+.news-about-nav {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.news-about-nav h1 {
+  font: normal normal 14px/32px YuMincho;
+}
+
+.news-about-nav p {
+  font: normal normal 16px/32px YuMincho;
+}
+
+/*access*/
+
+.access {
+  background-image: url(../img/bg.jpg);
+}
+
+.access-wrap {
+  display: flex;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.access-right {
+  width: 50%;
+}
+
+.access-left {
+  margin-left: 50px;
+}
+
+.access-nav {
+  margin-bottom: 20px;
+}
+
+.access-nav h1 {
+  margin-bottom: 20px;
+}
+
+.access-nav p {
+  line-height: 2;
+}
+
+/*link*/
+
+.link {
+  background-image: url(../img/bg3.jpg);
+  text-align: center;
+}
+
+.link-nav {
+  padding-top: 50px;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.link-nav p {
+  font: normal normal 18px/32px YuMincho;
+}
+
+.link-tav {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.link-tav p {
+  margin-bottom: 20px;
+}
+
+/*footer*/
+
+.footer {
+  background-color: #000000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer small {
+  color: #fff;
+  font: normal normal 12px/24px YuMincho;
+}
